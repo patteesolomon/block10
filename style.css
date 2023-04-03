@@ -1,0 +1,98 @@
+/*for the sizings*/
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-9 {width: 75%;}
+
+html{
+    font-size: 10px;
+    color: azure;
+    font-family: "Roboto", cursive, sans-serif;
+}
+span{
+  font-size: xx-large;
+  justify-content: space-around;
+  padding: 16px;
+}
+img {
+  border: 5px solid white;
+  padding: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+a:hover {
+  color: #bb8ff4;
+  text-decoration: none;
+}
+p{
+    font-size: larger;
+    z-index: 3; /*layer control*/
+}
+.button:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+.button {
+  background-color: #407ac7;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (max-width: 1680px) {
+  /* For desktop: */
+  [class*="col-6"] {
+    display: flex;
+    width: 100%;
+  }
+  html{
+     background-image: linear-gradient(120deg, #9590fc 0%, #022752 74%);
+  }
+    
+    body{
+        background-color: #6222c2;
+    }
+}
+
+/*ipad*/
+@media only screen and (max-width: 768px) {
+    [class*="col-5"] {
+        display: flex;
+      width: 100%;
+    }
+    body {
+      background-color:tomato;
+    }
+    html{
+      background-image: linear-gradient(315deg, #ffaaee 0%, #6a0d0d 74%);
+      font-size: large;
+      z-index: 2;
+    }
+    p{
+        font-size: large;
+    }
+    
+}
+  /*mobile*/
+  @media only screen and (max-width: 480px) {
+    [class*="col-9"] {
+        display: flex;
+        width: 100%;
+    }
+    body {
+        font-size: 19px;
+        background-color: rgb(228, 197, 41);
+    }
+    
+    html{
+      
+      background-image: linear-gradient(280deg, #c871f4 0%, #7c269b 74%);
+      z-index: 1;
+    }
+}
