@@ -4,19 +4,25 @@
 .col-9 {width: 75%;}
 
 html{
-    font-size: 10px;
+    font-size: 1rem;
     color: azure;
     font-family: "Roboto", cursive, sans-serif;
+    background-repeat: no-repeat;
+    background-size:auto;
+    background-color: #022752;
 }
+
 span{
   font-size: xx-large;
   justify-content: space-around;
   padding: 16px;
 }
+
 img {
   border: 5px solid white;
   padding: 10px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 1cap rgba(0, 0, 0, 0.3);
+  width: 300px;
 }
 
 a:hover {
@@ -43,6 +49,10 @@ p{
   cursor: pointer;
   border-radius: 20px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+#SK{
+  height: 200px;
 }
 
 @media only screen and (max-width: 1680px) {
